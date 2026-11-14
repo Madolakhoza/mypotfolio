@@ -1,0 +1,73 @@
+
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7fc;
+    color: #333;
+}
+
+/* Navigation */
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #7041a6;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Sections */
+
+section {
+    padding: 70px 10%;
+}
+
+#home {
+    text-align: center;
+    background-color: #eee7f7;
+    padding: 120px 20px;
+}
+
+#home h1 {
+    font-size: 40px;
+    color: #7041a6;
+    margin-bottom: 15px;
+}
+
+#home p {
+    margin: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #7041a6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
