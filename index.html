@@ -1,81 +1,197 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of an aspiring software developer and ICT student — skills, projects and contact details.">
+    <meta name="theme-color" content="#f7f5f3">
 
-    <title>My Personal Portfolio</title>
+    <title>Your Name — Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <h2>MyPortfolio</h2>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
+    <!-- Navigation Bar -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Primary">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-links-mobile-only"><a href="#contact">Contact</a></li>
             </ul>
+
+            <a href="#home" class="wordmark">Portfolio</a>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-contact">Contact</a>
+                <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+            </div>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Hello, I'm Your Name</h1>
+    <main id="main">
 
-        <h2>Aspiring Software Developer</h2>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <img class="hero-image" src="images/hero.png" alt="" fetchpriority="high">
+            <div class="hero-overlay" aria-hidden="true"></div>
 
-        <p>Welcome to my personal portfolio website.</p>
+            <div class="hero-content">
+                <p class="eyebrow eyebrow-light">ICT Student / Portfolio 2026</p>
+                <h1>Hello, I&apos;m Your Name</h1>
+                <p class="hero-subtitle">
+                    Aspiring Software Developer. Welcome to my personal portfolio website.
+                </p>
+                <a href="#about" class="link-arrow link-arrow-light">
+                    Learn More About Me <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
 
-        <a href="#about">Learn More About Me</a>
-    </section>
+        <!-- Marquee -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>HTML</span><span>//</span><span>CSS</span><span>//</span><span>Java</span><span>//</span><span>SQL</span><span>//</span><span>Problem Solving</span><span>//</span><span>Always Learning</span><span>//</span>
+                <span>HTML</span><span>//</span><span>CSS</span><span>//</span><span>Java</span><span>//</span><span>SQL</span><span>//</span><span>Problem Solving</span><span>//</span><span>Always Learning</span><span>//</span>
+            </div>
+        </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">My Skills</p>
+                    <h2 class="display">Built for the<br>modern web</h2>
+                </div>
+                <a href="#projects" class="link-arrow">View Projects <span aria-hidden="true">&rarr;</span></a>
+            </div>
 
-        <p>
-            I am an Information and Communication Technology
-            student passionate about technology and software development.
-        </p>
-    </section>
+            <ul class="skill-grid">
+                <li class="skill-card">
+                    <div class="card-media">
+                        <img src="images/skill-frontend.png" alt="Website wireframe sketches and color swatches on marble" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <h3>HTML &amp; CSS</h3>
+                        <span aria-hidden="true">&rarr;</span>
+                    </div>
+                    <p class="card-caption">Front-end &middot; Structure &amp; Style</p>
+                </li>
+                <li class="skill-card">
+                    <div class="card-media">
+                        <img src="images/skill-java.png" alt="Keyboard and monitor with code in a minimal white room" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <h3>Java</h3>
+                        <span aria-hidden="true">&rarr;</span>
+                    </div>
+                    <p class="card-caption">Programming &middot; Object-Oriented</p>
+                </li>
+                <li class="skill-card">
+                    <div class="card-media">
+                        <img src="images/skill-sql.png" alt="Organized archival index card drawers" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <h3>SQL</h3>
+                        <span aria-hidden="true">&rarr;</span>
+                    </div>
+                    <p class="card-caption">Databases &middot; Queries &amp; Design</p>
+                </li>
+            </ul>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>My Skills</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="section section-muted">
+            <div class="section-header section-header-center">
+                <p class="eyebrow">Selected Work</p>
+                <h2 class="display">My Projects</h2>
+            </div>
 
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Java</p>
-        <p>SQL</p>
-    </section>
+            <ul class="project-grid">
+                <li class="project-tile">
+                    <img src="images/project-1.png" alt="Laptop showing a minimal website on a linen table" loading="lazy">
+                    <p class="project-label">Project 01 &middot; Coming Soon</p>
+                </li>
+                <li class="project-tile project-tile-offset">
+                    <img src="images/project-2.png" alt="Smartphone with a clean app interface" loading="lazy">
+                    <p class="project-label">Project 02 &middot; Coming Soon</p>
+                </li>
+                <li class="project-tile">
+                    <img src="images/project-3.png" alt="Developer working on a laptop in a concrete loft" loading="lazy">
+                    <p class="project-label">Project 03 &middot; Coming Soon</p>
+                </li>
+                <li class="project-tile project-tile-offset">
+                    <img src="images/project-4.png" alt="Notebook with handwritten database diagrams" loading="lazy">
+                    <p class="project-label">Project 04 &middot; Coming Soon</p>
+                </li>
+            </ul>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
+            <p class="projects-note">My projects will appear here soon.</p>
+        </section>
 
-        <p>My projects will appear here soon.</p>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="about-media">
+                <img src="images/about.png" alt="Sunlit study room with notebooks and books on a wooden table" loading="lazy">
+            </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+            <div class="about-content">
+                <p class="eyebrow">About Me</p>
+                <h2 class="display-sm">Rooted in curiosity, shaped by code</h2>
+                <p>
+                    I am an Information and Communication Technology
+                    student passionate about technology and software development.
+                </p>
+                <p>
+                    I enjoy turning ideas into clean, thoughtful digital experiences and
+                    am always learning new tools, languages and ways to solve problems.
+                </p>
+            </div>
+        </section>
 
-        <p>Email: your-email@example.com</p>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <p class="eyebrow eyebrow-light">Stay Connected</p>
+            <h2 class="display-sm">Contact Me</h2>
+            <p class="contact-text">
+                Have a project, opportunity or question? I&apos;d love to hear from you.
+            </p>
+
+            <div class="contact-actions">
+                <span class="contact-email">your-email@example.com</span>
+                <a href="mailto:your-email@example.com" class="button-light">
+                    Send Email <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>Copyright &copy; 2026 My Personal Portfolio</p>
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <p class="wordmark">Portfolio</p>
+            <p>Aspiring software developer. Building with intention, learning every day.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <p class="footer-copy">Copyright &copy; <span id="year">2026</span> My Personal Portfolio</p>
     </footer>
 
     <script src="js/script.js"></script>
