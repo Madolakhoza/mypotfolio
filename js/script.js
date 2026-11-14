@@ -23,7 +23,7 @@ if (menuToggle && navLinks) {
         menuToggle.setAttribute("aria-expanded", isOpen);
 
         // Change the menu icon
-        menuToggle.textContent = isOpen ? "✕" : "☰";
+        menuToggle.textContent = isOpen ? "Close" : "Menu";
 
     });
 
@@ -40,7 +40,7 @@ if (menuToggle && navLinks) {
 
             menuToggle.setAttribute("aria-expanded", "false");
 
-            menuToggle.textContent = "☰";
+            menuToggle.textContent = "Menu";
 
         });
 
